@@ -115,6 +115,33 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+
+			// 🔹 Add Carousel Logic Here
+			const carousel = document.querySelector(".carousel");
+if (carousel) {
+	let currentIndex = 0;
+	const slides = carousel.querySelectorAll(".carousel-slide");
+	const totalSlides = slides.length;
+
+	function showSlide(index) {
+		slides.forEach((slide, i) => {
+			slide.style.display = i === index ? "block" : "none";
+		});
+	}
+
+	carousel.querySelector(".carousel-prev").addEventListener("click", () => {
+		currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+		showSlide(currentIndex);
+	});
+
+	carousel.querySelector(".carousel-next").addEventListener("click", () => {
+		currentIndex = (currentIndex + 1) % totalSlides;
+		showSlide(currentIndex);
+	});
+
+	showSlide(currentIndex); // Initialize carousel
+}
+
 		});
 
 	// Scrolly.
