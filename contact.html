@@ -16,6 +16,37 @@
 		h1, h2, h3 {
 		  text-transform: capitalize;
 		}
+
+		.contact-form label {
+			display: block;
+			margin-bottom: 4px;
+			font-weight: 600;
+		  }
+		
+		  .contact-form input,
+		  .contact-form textarea {
+			width: 100%;
+			margin-bottom: 12px;
+			padding: 8px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			font-family: inherit;
+		  }
+		
+		  .contact-form input[type="submit"] {
+			margin-top: 12px;
+			padding: 10px 16px;
+			background-color: #1b1f23;
+			color: white;
+			border: none;
+			cursor: pointer;
+			font-weight: bold;
+		  }
+		
+		  .contact-form input[type="submit"]:hover {
+			background-color: #333;
+		  }
+
 	  </style>
 	<body class="is-preload">
 
@@ -54,15 +85,16 @@
 									<h2>Contact</h2>
 								</header>
 
-								<!-- Text stuff -->
-									<h4>Swaetha Ramkumar</h4>
+								<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+									<!-- Left column: Address/info -->
+									<div style="flex: 1; min-width: 280px;">
+									  <h4>Swaetha Ramkumar</h4>
 									<p>SNIAM Building<br />
 									School of Physics,<br />
 									Trinity College Dublin, <br />
 									College Green, <br />
 									Dublin-2, Ireland<br />
 									<a href="mailto: ramkumas@tcd.ie" class="fa fa-envelope"> <span class="label"></span>ramkumas@tcd.ie</a><br />
-									<!-- <br /> -->
 									<ul class="icons">
 										<li><a href="https://orcid.org/0000-0003-0815-8366" class="icon brands fa-orcid"><span class="label">ORCID</span>https://orcid.org/0000-0003-0815-8366</a></li><br />
 										<li><a href="https://www.linkedin.com/in/swaetharamkumar" class="icon brands fa-linkedin"><span class="label">LinkedIn</span>https://www.linkedin.com/in/swaetharamkumar</a></li><br />
@@ -70,23 +102,52 @@
 										<li><a href="CV_Swaetha.pdf" class="icon solid fa-file-pdf"><span class="label"></span>CV</a></li>
 
 									</ul>
-									<!-- <br /> -->
+									</div>
+								
+									<!-- Right column: Contact form -->
+									<div style="flex: 1; min-width: 280px;">
+										<h3>Get In Touch!</h3>
+										<p>(If you have questions, want to connect or would like to collaborate, feel free to fill out the form below!)</p>
+										<form method="POST" action="https://formspree.io/f/xanobeyp" class="contact-form">
+  
+										  	<label for="name">Name</label>
+										  	<input type="text" name="name" id="name" required>
+									  
+										  	<label for="email">Email</label>
+										  	<input type="email" name="email" id="email" required>
+									  
+										  	<label for="message">Message</label>
+										  	<textarea name="message" id="message" rows="5" required></textarea>
+											
+											<!-- Honeypot field (invisible to humans) -->
+											<div style="display: none;">
+												<label>Do not fill this out if you're human: <input name="_gotcha"></label>
+  											</div>
+
+										  	<input type="submit" value="Send Message" class="button primary">										</form>
+									</div>
+									  
+
+
+
+									<!-- <h4>Swaetha Ramkumar</h4>
+									<p>SNIAM Building<br />
+									School of Physics,<br />
+									Trinity College Dublin, <br />
+									College Green, <br />
+									Dublin-2, Ireland<br />
+									<a href="mailto: ramkumas@tcd.ie" class="fa fa-envelope"> <span class="label"></span>ramkumas@tcd.ie</a><br />
+									<ul class="icons">
+										<li><a href="https://orcid.org/0000-0003-0815-8366" class="icon brands fa-orcid"><span class="label">ORCID</span>https://orcid.org/0000-0003-0815-8366</a></li><br />
+										<li><a href="https://www.linkedin.com/in/swaetharamkumar" class="icon brands fa-linkedin"><span class="label">LinkedIn</span>https://www.linkedin.com/in/swaetharamkumar</a></li><br />
+										<li><a href="https://github.com/swaetharamkumar" class="icon brands fa-github"><span class="label">GitHub</span>https://github.com/swaetha-ramkumar</a></li><br/>
+										<li><a href="CV_Swaetha.pdf" class="icon solid fa-file-pdf"><span class="label"></span>CV</a></li>
+
+									</ul>
 									<a href="https://www.google.com/maps/place/Trinity+College+Dublin/@53.3437967,-6.2571465,17z/data=!3m1!4b1!4m6!3m5!1s0x48670e9b2dc78edd:0x2700fe0d8c716167!8m2!3d53.3437935!4d-6.2545716!16zL20vMDExeHkx?entry=ttu">அப்பறம், எப்போ விசிட் பண்ணுறத பிளான்? (<i>Translation:</i> So, when do you plan to visit?)</a></p>
 
-									<!-- <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
-									Finally, this is a <a href="#">link</a>.</p> -->
-
-								
-								<!-- Image -->
-									<!-- <h2>Image</h2> -->
-
-									<!-- <h3>Fit</h3> -->
-									<span class="image fit"><img src="images/Trinity_Snow.jpg" alt="" /></span>
 									
-								
-
+									<span class="image fit"><img src="images/Trinity_Snow.jpg" alt="" /></span> -->
 
 
 							</section>
