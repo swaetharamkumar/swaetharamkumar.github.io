@@ -2263,7 +2263,7 @@ input, select, textarea {
   gap: 4rem;
 
   max-width: 1100px;
-  margin: 1.rem auto 2.rem;    /* reduced top spacing */
+  margin: 1rem auto 2rem;    /* reduced top spacing */
   padding: 0 1rem;
 }
 
