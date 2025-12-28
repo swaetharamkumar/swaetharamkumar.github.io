@@ -2263,7 +2263,7 @@ input, select, textarea {
   gap: 4rem;
 
   max-width: 1100px;
-  margin: 1rem auto 2rem;    /* reduced top spacing */
+  margin: 0.5rem auto 0.5rem;    /* reduced top spacing */
   padding: 0 1rem;
 }
 
@@ -2272,8 +2272,8 @@ input, select, textarea {
    ==================== */
 
 .currently-reading {
-  flex: 0 0 420px;
-  max-width: 350px;
+  flex: 0 0 300px;
+  max-width: 300px;
 
   display: flex;
   flex-direction: column;
@@ -2298,8 +2298,8 @@ input, select, textarea {
    ==================== */
 
 .life-carousel {
-  flex: 0 0 470px;
-  max-width: 470px;
+  flex: 0 0 400px;
+  max-width: 400px;
 
   display: flex;
   flex-direction: column;
