@@ -286,6 +286,75 @@
 
 								<!-- Right column: Contact form -->
 								<div style="flex: 1; min-width: 280px;">
+								  <p>
+								    If you have questions, want to connect, or would like to collaborate,
+								    please reach out!
+								  </p>
+								
+								  <form action="https://formspree.io/f/mgoeagrp" method="post">
+								
+								    <div class="row">
+								
+								      <!-- Name -->
+								      <div class="col-6 col-12-medium">
+								        <input
+								          type="text"
+								          name="name"
+								          placeholder="Name"
+								          required
+								          minlength="2"
+								          pattern="[A-Za-z\s]{2,}"
+								          title="Please enter a valid name (letters only)"
+								        />
+								      </div>
+								
+								      <!-- Email -->
+								      <div class="col-6 col-12-medium">
+								        <input
+								          type="email"
+								          name="email"
+								          placeholder="Email"
+								          required
+								          title="Please enter a valid email address"
+								        />
+								      </div>
+								
+								      <!-- Subject -->
+								      <div class="col-12">
+								        <input
+								          type="text"
+								          name="subject"
+								          placeholder="Subject"
+								        />
+								      </div>
+								
+								      <!-- Message -->
+								      <div class="col-12">
+								        <textarea
+								          name="message"
+								          placeholder="Message"
+								          rows="6"
+								          required
+								          minlength="10"
+								        ></textarea>
+								      </div>
+								
+								      <div style="display: none;">
+								        <label>
+								          Do not fill this out if you're human:
+								          <input type="text" name="_gotcha">
+								        </label>
+								      </div>
+								
+								      <!-- Submit -->
+								      <div class="col-12">
+								        <input type="submit" value="Send Message" />
+								      </div>
+								
+								    </div>
+								  </form>
+								</div>
+								<!-- <div style="flex: 1; min-width: 280px;">
 								<p>If you have questions, want to connect or would like to collaborate, please reach out!</p>
 								<form action="https://formspree.io/f/mgoeagrp" method="post">
 									<div>
@@ -314,7 +383,7 @@
 										</div>
 									</div>
 								</form>
-							</div>
+							</div> -->
 							</article>
 
 					</div>
@@ -339,6 +408,7 @@
 	</body>
 
 </html>
+
 
 
 
