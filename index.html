@@ -291,18 +291,20 @@
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="name" placeholder="Name"
+													required minlength="2" pattern="[A-Za-z\s]{2,}"
+													title="Please enter a valid name (letters only)/>
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" placeholder="Email"
+													required title="Please enter a valid email address"/>
 											</div>
 											<div class="col-12">
 												<input type="text" name="subject" placeholder="Subject" />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="message" placeholder="Message" rows="6" rows="6" required minlength="10"></textarea>
 											</div>
-											<!-- Honeypot field (invisible to humans) -->
 											<div style="display: none;">
 												<label>Do not fill this out if you're human: <input name="_gotcha"></label>
   											</div>
@@ -337,6 +339,7 @@
 	</body>
 
 </html>
+
 
 
 
